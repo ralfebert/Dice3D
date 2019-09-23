@@ -10,26 +10,29 @@
 		14EABE1F5DDD0681433CDAC8 /* Dice3DAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D835070F22A17277616041F /* Dice3DAppDelegate.swift */; };
 		442214A8770EFC1375F46962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D4AC3F2D2BE256DE515CAD /* Main.storyboard */; };
 		4E22714D230B39E622818DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FDA3F2F916CFBA5F86B9D8 /* LaunchScreen.storyboard */; };
+		BFE122592339286A00BEAC18 /* SCNNode+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE122562339286A00BEAC18 /* SCNNode+Utils.swift */; };
+		BFE1225A2339286A00BEAC18 /* JAQDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE122572339286A00BEAC18 /* JAQDiceView.swift */; };
+		BFE1225B2339286A00BEAC18 /* JAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE122582339286A00BEAC18 /* JAQViewController.swift */; };
+		BFE1226123392D8300BEAC18 /* Dices.scn in Resources */ = {isa = PBXBuildFile; fileRef = BFE1226023392D8300BEAC18 /* Dices.scn */; };
+		E857B39CDAEABF67821C60FC /* woodTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F1F5993CA7DEB8A3527723 /* woodTile.png */; };
 		FBE09A08F77F45E11D302231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87ED54399913CD565099E92A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14B8001CFE24DEEE7F0A8022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F1F5993CA7DEB8A3527723 /* woodTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodTile.png; sourceTree = "<group>"; };
 		4D835070F22A17277616041F /* Dice3DAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice3DAppDelegate.swift; sourceTree = "<group>"; };
 		63D4AC3F2D2BE256DE515CAD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		807E6D0F08353518166CBBC2 /* Dice3D.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Dice3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ED54399913CD565099E92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66C190DA85C29C9129D1F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFE122562339286A00BEAC18 /* SCNNode+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Utils.swift"; sourceTree = "<group>"; };
+		BFE122572339286A00BEAC18 /* JAQDiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAQDiceView.swift; sourceTree = "<group>"; };
+		BFE122582339286A00BEAC18 /* JAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAQViewController.swift; sourceTree = "<group>"; };
+		BFE1226023392D8300BEAC18 /* Dices.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Dices.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		0244D9424836AF3EB5208290 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		0488CB049E0FB4454797D607 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +53,9 @@
 		80315BCAB79268739E8ED955 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BFE122572339286A00BEAC18 /* JAQDiceView.swift */,
+				BFE122582339286A00BEAC18 /* JAQViewController.swift */,
+				BFE122562339286A00BEAC18 /* SCNNode+Utils.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -58,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				87ED54399913CD565099E92A /* Assets.xcassets */,
+				BFE1226023392D8300BEAC18 /* Dices.scn */,
 				13FDA3F2F916CFBA5F86B9D8 /* LaunchScreen.storyboard */,
 				63D4AC3F2D2BE256DE515CAD /* Main.storyboard */,
+				46F1F5993CA7DEB8A3527723 /* woodTile.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -72,21 +80,12 @@
 			);
 			sourceTree = "<group>";
 		};
-		BF7CAEEDF80EB71CD914870B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		DEC9994636047AD4050423A5 /* Dice3D */ = {
 			isa = PBXGroup;
 			children = (
 				190F3CA258B648296DA6ADA2 /* App */,
 				91CBC72341052950654A9574 /* Assets */,
-				0244D9424836AF3EB5208290 /* Common */,
 				80315BCAB79268739E8ED955 /* Controller */,
-				BF7CAEEDF80EB71CD914870B /* Model */,
 			);
 			path = Dice3D;
 			sourceTree = "<group>";
@@ -123,6 +122,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = A2B4B153853D8D36537E13E2;
@@ -142,6 +142,8 @@
 				FBE09A08F77F45E11D302231 /* Assets.xcassets in Resources */,
 				4E22714D230B39E622818DB9 /* LaunchScreen.storyboard in Resources */,
 				442214A8770EFC1375F46962 /* Main.storyboard in Resources */,
+				E857B39CDAEABF67821C60FC /* woodTile.png in Resources */,
+				BFE1226123392D8300BEAC18 /* Dices.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE122592339286A00BEAC18 /* SCNNode+Utils.swift in Sources */,
+				BFE1225B2339286A00BEAC18 /* JAQViewController.swift in Sources */,
 				14EABE1F5DDD0681433CDAC8 /* Dice3DAppDelegate.swift in Sources */,
+				BFE1225A2339286A00BEAC18 /* JAQDiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +181,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Dice3D/App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Dice3D;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -302,7 +310,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Dice3D/App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Dice3D;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;

@@ -12,6 +12,7 @@ targets:
       - path: Dice3D
         excludes:
           - "Assets/*.sketch"
+          - "*/.gitkeep"
     settings:
       base:
         SWIFT_VERSION: 5.0
